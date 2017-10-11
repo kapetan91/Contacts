@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { contacts } from '../contacts'
 
 @Injectable()
 export class ContactsService {
@@ -6,10 +7,7 @@ export class ContactsService {
   constructor() { }
 
   getContacts() {
-  	return[
-  	{ id: 1, name: 'John' },
-  	{ id: 2, name: 'Doe' }
-  	];
+  	return contacts;
   }
 
 }
