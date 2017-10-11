@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ExponentialPipe } from './pipes/exponential.pipe';
+import { ContactsService } from './services/contacts.service';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,7 @@ import { ExponentialPipe } from './pipes/exponential.pipe';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ContactsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
