@@ -7,10 +7,5 @@ import { ContactsService } from './services/contacts.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	contacts:Array<Object>
 
-	constructor(private contactsService: ContactsService){
-		this.contacts = contactsService.getContacts();
-		console.log(this.contacts);
-	}
 }
